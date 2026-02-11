@@ -1,0 +1,7 @@
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> New-Item commands.txt
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git checkout -b feature-update
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> mkdir reports
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> New-Item reports/summary.md
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> "This document provides a summary of the project updates." | Add-Content reports/summary.md
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git add reports/
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git commit -m "Add reports directory"
