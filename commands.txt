@@ -5,3 +5,18 @@ PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> New
 PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> "This document provides a summary of the project updates." | Add-Content reports/summary.md
 PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git add reports/
 PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git commit -m "Add reports directory"
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> 1..3 | ForEach-Object { New-Item "reports/file$_.txt" }
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> Move-Item data/raw-data.csv data/input-data.csv
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> mkdir scripts/backup; Copy-Item scripts/*.py scripts/backup/
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> Remove-Item docs/documentation.md
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git add .
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git commit -m "Update project files"
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> New-Item .gitignore
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> "temp/", "dataset0?.csv" | Add-Content .gitignore
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> Get-Content .gitignore
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git add .gitignore; git commit -m "Add .gitignore file"
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git checkout main
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git merge feature-update
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git add commands.txt
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git commit -m "Add final list of commands"
+PS C:\Users\emory\Documents\xuexi\2026 Spring\Datasci 350\datasci350-quiz01> git push origin main
